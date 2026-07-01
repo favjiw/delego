@@ -40,7 +40,34 @@ export default function LandingPage() {
       </nav>
 
       {/* Hero */}
-      <section className="flex flex-col items-center text-center px-8 py-24">
+      <section className="flex flex-col items-center text-center pt-34 py-24">
+        <div className="bg-[#EEF2FF] text-[#3525CD] px-[12px] py-[6px] rounded-xl border-b border-[#E0E7FF] mb-6">
+          {/* icon and text "AI-Powered Delegation" */}
+          <Image
+            src="/ai-icon.svg"
+            alt="AI Icon"
+            width={16}
+            height={16}
+            className="inline-block mr-2"
+          />
+          <span className="text-sm font-semibold">AI-Powered Delegation</span>
+        </div>
+        <h1 className="text-5xl font-bold text-[#191C1E] max-w-5xl leading-tight mb-6">
+          From meeting brief to delegated tasks in seconds
+        </h1>
+        <p className="text-lg font-light text-[#464555] max-w-3xl">
+          Empowering student leaders to lead, not just manage. Paste your brief and let Delego handle the delegation.
+        </p>
+        <div className="flex space-x-4 mt-10 items-center">
+          <Link href="/register" className="bg-[#4F46E5] text-white px-8 py-4 rounded-sm font-medium hover:bg-indigo-700 transition-colors">
+            Start for Free
+          </Link>
+          <Link href="/demo" className="bg-white text-[#191C1E] px-8 py-4 rounded-sm font-medium hover:bg-indigo-100 transition-colors border border-[#C7C4D8] hover:text-black">
+            Watch Demo
+          </Link>
+        </div>
+      </section>
+      {/* <section className="flex flex-col items-center text-center px-8 py-24">
         <h1 className="text-5xl font-bold text-gray-900 max-w-2xl leading-tight">
           From meeting brief to delegated tasks{" "}
           <span className="text-indigo-600">in seconds</span>
@@ -55,7 +82,7 @@ export default function LandingPage() {
         >
           Start for Free
         </Link>
-      </section>
+      </section> */}
 
       {/* Features */}
       <section className="grid grid-cols-1 md:grid-cols-3 gap-8 px-8 pb-24 max-w-5xl mx-auto">
